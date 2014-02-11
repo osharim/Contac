@@ -38,6 +38,8 @@
 		CBA4561818A99522004BEC36 /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBA4560818A99522004BEC36 /* thai_shrimp_cake.jpg */; };
 		CBA4561918A99522004BEC36 /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBA4560918A99522004BEC36 /* vegetable_curry.jpg */; };
 		CBA4561A18A99522004BEC36 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBA4560A18A99522004BEC36 /* white_chocolate_donut.jpg */; };
+		CBA4561C18A9C22D004BEC36 /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA4561B18A9C22D004BEC36 /* SimpleTableCell.xib */; };
+		CBA4562218A9E157004BEC36 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA4562118A9E157004BEC36 /* SimpleTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,9 @@
 		CBA4560818A99522004BEC36 /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thai_shrimp_cake.jpg; path = simpletable_image_pack/thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		CBA4560918A99522004BEC36 /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vegetable_curry.jpg; path = simpletable_image_pack/vegetable_curry.jpg; sourceTree = "<group>"; };
 		CBA4560A18A99522004BEC36 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = white_chocolate_donut.jpg; path = simpletable_image_pack/white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		CBA4561B18A9C22D004BEC36 /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SimpleTableCell.xib; path = ../SimpleTableCell.xib; sourceTree = "<group>"; };
+		CBA4562018A9E157004BEC36 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleTableCell.h; path = ../SimpleTableCell.h; sourceTree = "<group>"; };
+		CBA4562118A9E157004BEC36 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleTableCell.m; path = ../SimpleTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +151,9 @@
 		CBA455C718A98EB2004BEC36 /* Contactlify */ = {
 			isa = PBXGroup;
 			children = (
+				CBA4562018A9E157004BEC36 /* SimpleTableCell.h */,
+				CBA4562118A9E157004BEC36 /* SimpleTableCell.m */,
+				CBA4561B18A9C22D004BEC36 /* SimpleTableCell.xib */,
 				CBA455FB18A99522004BEC36 /* angry_birds_cake.jpg */,
 				CBA455FC18A99522004BEC36 /* creme_brelee.jpg */,
 				CBA455FD18A99522004BEC36 /* egg_benedict.jpg */,
@@ -286,6 +294,7 @@
 				CBA4561218A99522004BEC36 /* hamburger.jpg in Resources */,
 				CBA4561818A99522004BEC36 /* thai_shrimp_cake.jpg in Resources */,
 				CBA4560B18A99522004BEC36 /* angry_birds_cake.jpg in Resources */,
+				CBA4561C18A9C22D004BEC36 /* SimpleTableCell.xib in Resources */,
 				CBA455DA18A98EB2004BEC36 /* Images.xcassets in Resources */,
 				CBA4561118A99522004BEC36 /* ham_and_egg_sandwich.jpg in Resources */,
 				CBA455CC18A98EB2004BEC36 /* InfoPlist.strings in Resources */,
@@ -320,6 +329,7 @@
 				CBA455D818A98EB2004BEC36 /* ViewController.m in Sources */,
 				CBA455D218A98EB2004BEC36 /* AppDelegate.m in Sources */,
 				CBA455CE18A98EB2004BEC36 /* main.m in Sources */,
+				CBA4562218A9E157004BEC36 /* SimpleTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SimpleTableCell.h"
 
 @interface ViewController ()
 
@@ -26,23 +27,36 @@
     return [tableData count];//
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//create view
+- (SimpleTableCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier = @"SimpleTableCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    SimpleTableCell *cell = (SimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.imageView.image = [UIImage  imageNamed:[thumbnails objectAtIndex:indexPath.row]];
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    
+    cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    //cell.TimeLabel.text = [prepTime objectAtIndex:indexPath.row];
+    
+    //cell.imageView.image = [UIImage  imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    //cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     
     return cell;
 }
 
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 119;
+}
 
 
 - (void)viewDidLoad
